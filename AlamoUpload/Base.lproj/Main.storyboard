@@ -1,13 +1,14 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6211" systemVersion="14A298i" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="10117" systemVersion="15E65" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6204"/>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
     </dependencies>
     <scenes>
         <!--View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="AlamoUpload" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
                         <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
@@ -15,8 +16,42 @@
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="WbV-Gw-j2f">
+                                <rect key="frame" x="180" y="180" width="240" height="240"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="240" id="f7x-pU-8t6"/>
+                                    <constraint firstAttribute="height" constant="240" id="gQb-ou-yUl"/>
+                                </constraints>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="pZi-Jm-KDO">
+                                <rect key="frame" x="281" y="448" width="38" height="30"/>
+                                <state key="normal" title="Open"/>
+                                <connections>
+                                    <action selector="onBtnOpenClicked:" destination="BYZ-38-t0r" eventType="touchUpInside" id="oN7-gQ-6af"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="DNb-2E-dcR">
+                                <rect key="frame" x="276" y="486" width="49" height="30"/>
+                                <state key="normal" title="Submit"/>
+                                <connections>
+                                    <action selector="onBtnSubmitClicked:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Gre-nw-HmH"/>
+                                </connections>
+                            </button>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="WbV-Gw-j2f" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="1Cf-SE-yPt"/>
+                            <constraint firstItem="DNb-2E-dcR" firstAttribute="centerX" secondItem="pZi-Jm-KDO" secondAttribute="centerX" id="5ur-EU-DIz"/>
+                            <constraint firstItem="pZi-Jm-KDO" firstAttribute="top" secondItem="WbV-Gw-j2f" secondAttribute="bottom" constant="28" id="8Vz-7z-6c6"/>
+                            <constraint firstItem="pZi-Jm-KDO" firstAttribute="centerX" secondItem="WbV-Gw-j2f" secondAttribute="centerX" id="IJe-Pq-sy9"/>
+                            <constraint firstItem="DNb-2E-dcR" firstAttribute="top" secondItem="pZi-Jm-KDO" secondAttribute="bottom" constant="8" id="Mt3-Ca-HNa"/>
+                            <constraint firstItem="WbV-Gw-j2f" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="OyN-kw-lfF"/>
+                        </constraints>
                     </view>
+                    <connections>
+                        <outlet property="imgView" destination="WbV-Gw-j2f" id="ga7-gK-l3G"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>

@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		6B44D0A685E76DC45EEA25B2 /* Pods_AlamoUpload.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 70022066AD7907BABCC7CD0D /* Pods_AlamoUpload.framework */; };
 		7909459D1CEBDF0900F47EA7 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7909459C1CEBDF0900F47EA7 /* AppDelegate.swift */; };
 		7909459F1CEBDF0900F47EA7 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7909459E1CEBDF0900F47EA7 /* ViewController.swift */; };
 		790945A21CEBDF0900F47EA7 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 790945A01CEBDF0900F47EA7 /* Main.storyboard */; };
@@ -15,6 +16,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		70022066AD7907BABCC7CD0D /* Pods_AlamoUpload.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_AlamoUpload.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		790945991CEBDF0900F47EA7 /* AlamoUpload.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AlamoUpload.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		7909459C1CEBDF0900F47EA7 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		7909459E1CEBDF0900F47EA7 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -22,6 +24,8 @@
 		790945A31CEBDF0900F47EA7 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		790945A61CEBDF0900F47EA7 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		790945A81CEBDF0900F47EA7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		84339BA3502B0D6897F74F0B /* Pods-AlamoUpload.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AlamoUpload.debug.xcconfig"; path = "Pods/Target Support Files/Pods-AlamoUpload/Pods-AlamoUpload.debug.xcconfig"; sourceTree = "<group>"; };
+		D364613E0BC2724737401DC3 /* Pods-AlamoUpload.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AlamoUpload.release.xcconfig"; path = "Pods/Target Support Files/Pods-AlamoUpload/Pods-AlamoUpload.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -29,17 +33,28 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				6B44D0A685E76DC45EEA25B2 /* Pods_AlamoUpload.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		748C221028E8FCF74FA7C262 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				70022066AD7907BABCC7CD0D /* Pods_AlamoUpload.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		790945901CEBDF0900F47EA7 = {
 			isa = PBXGroup;
 			children = (
 				7909459B1CEBDF0900F47EA7 /* AlamoUpload */,
 				7909459A1CEBDF0900F47EA7 /* Products */,
+				D75FD5EF2D61C19E4E42FBA2 /* Pods */,
+				748C221028E8FCF74FA7C262 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -64,6 +79,15 @@
 			path = AlamoUpload;
 			sourceTree = "<group>";
 		};
+		D75FD5EF2D61C19E4E42FBA2 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				84339BA3502B0D6897F74F0B /* Pods-AlamoUpload.debug.xcconfig */,
+				D364613E0BC2724737401DC3 /* Pods-AlamoUpload.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -71,9 +95,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 790945AB1CEBDF0900F47EA7 /* Build configuration list for PBXNativeTarget "AlamoUpload" */;
 			buildPhases = (
+				A2C1F782AFB1A485519537FE /* 📦 Check Pods Manifest.lock */,
 				790945951CEBDF0900F47EA7 /* Sources */,
 				790945961CEBDF0900F47EA7 /* Frameworks */,
 				790945971CEBDF0900F47EA7 /* Resources */,
+				7F2414C90A73B5D25854414D /* 📦 Embed Pods Frameworks */,
+				179C9A5F0E755176D0B47169 /* 📦 Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -129,6 +156,54 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		179C9A5F0E755176D0B47169 /* 📦 Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "📦 Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-AlamoUpload/Pods-AlamoUpload-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		7F2414C90A73B5D25854414D /* 📦 Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "📦 Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-AlamoUpload/Pods-AlamoUpload-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		A2C1F782AFB1A485519537FE /* 📦 Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "📦 Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		790945951CEBDF0900F47EA7 /* Sources */ = {
@@ -249,6 +324,7 @@
 		};
 		790945AC1CEBDF0900F47EA7 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 84339BA3502B0D6897F74F0B /* Pods-AlamoUpload.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = AlamoUpload/Info.plist;
@@ -260,6 +336,7 @@
 		};
 		790945AD1CEBDF0900F47EA7 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = D364613E0BC2724737401DC3 /* Pods-AlamoUpload.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = AlamoUpload/Info.plist;
@@ -288,6 +365,7 @@
 				790945AD1CEBDF0900F47EA7 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
